@@ -177,7 +177,7 @@ body {
 }
 
 
-.modal {
+/* .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -199,7 +199,7 @@ body {
     width: 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
+ */
 .form-control {
     transition: all 0.3s ease;
   }
