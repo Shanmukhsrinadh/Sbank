@@ -1,21 +1,22 @@
 function showLoginPrompt() {
-    var modal = document.getElementById('loginModal');
-    modal.style.display = 'flex'; 
+  var modal = document.getElementById('loginModal');
+  modal.style.display = 'flex'; 
+}
+
+function handleLogin() {
+  let accountNumber = document.getElementById("accountNumber").value;
+  let pin = document.getElementById("exampleInputPassword1").value;
+  if (accountNumber && pin) {
+      if (accountNumber === "123456789" && pin === "1234") {
+          alert("Login successful!");
+          window.location.href = "./accountdetails.html"; 
+      } else {
+          alert("Invalid account number or PIN.");
+      }
+  } else {
+      alert("Please enter both account number and PIN.");
   }
-  function handleLogin() {
-    let accountNumber = document.getElementById("accountNumber").value;
-    let pin = document.getElementById("exampleInputPassword1").value;
-    if (accountNumber && pin) {
-        if (accountNumber === "123456789" && pin === "1234") {
-            alert("Login successful!");
-            window.location.href = "./accountdetails.html"; 
-        } else {
-            alert("Invalid account number or PIN.");
-        }
-    } else {
-        alert("Please enter both account number and PIN.");
-    }
- }
+}
 
 function closeModal() {
  document.getElementById("debitWindowModel").style.display = "none";
